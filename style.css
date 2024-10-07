@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: beige;
+    height: 300vh;
+    width: 100%;
+}
+ .navbar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vh;
+    width: 70%;
+    margin: auto;
+}
+.navlist{
+    display: flex;
+    gap: 4rem;
+}
+.fa-solid fa-magnifying-glass-location
+{
+    font-size: 50px;
+}
+.fa-solid fa-cart-shopping
+ {
+    font-size: 50px;
+ }
+ .fa-solid fa-user
+ {
+    font-size: 50px;
+ }
+.navbar .logo{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(35,35,35);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.slider{
+    overflow: hidden;
+}
+.slider figure{
+    position: relative;
+    width: 200%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+.slider figure img {
+    float: left;
+    width: 30%;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+ }
+ 30% {
+    left: 0;
+
+ }
+ 30%
+ {
+    left: -100%;
+
+ }
+ 30%
+ {
+    left: -100%;
+ }
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product{
+    padding: 10px 8% 120px;
+
+    
+}
+.main-txt{
+    text-align: center;
+}
+.main-txt h3{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.cards-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 0,90rem;
+    margin-top: 30px;
+}
+.cards-content .row2{
+    background: #f3f3f3;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.row2 img{
+    width: 100%;
+    display:block;
+
+}
+.card-body{
+    padding: 10px;
+}
+.card-body h3{
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 550;
+    color: blueviolet;
+    text-shadow: 0px 1px 1px black;
+}
+.card-body h5{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.card-body button{
+    width: 130px;
+    height: 30px;
+    font-weight: 550;
+    margin-top: 5px;
+    background: transparent;
+    color: aqua;
+    border-radius: 5px;
+    border: 2px solid aqua;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.card-body button:hover{
+    background: aqua;
+    color: white;
+    
+}
+@media(max-width:920px){
+    .cards-content{
+        grid-template-columns: ifr;
+    }
+}
+.banner{
+    width:"100%";
+    height: 100vh;
+     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/pngtree-modern-simple-living-room-design-home-decoration-effect-drawing-image_883143.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.banner-content{
+    text-align: center;
+    padding: 150px 10% 10px;
+
+}
+.banner-content h5{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.banner-content h3{
+    color:#f3f3f3;
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px black;
+}
+.banner-content p{
+    color:white;
+    font-size: 16px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.banner-content button a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+
+}
+.banner-content button{
+    width: 160px;
+    height: 36px;
+    margin-top : 10px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.banner-content button:hover{
+    background: #388b6f;
+    border:none;
+
+}
+.footer{
+    background-color: #111;
+}
+.footer-icons{
+    display: flex;
+    justify-content:end;
+}
+.footer-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.footer-icons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.footer-icons a:hover{
+    background-color:#111;
+    transition: 0.5s;
+}
+.footer-icons a:hover i{
+    color: white;
+    transition: 0.5s;
+
+}
+.footer-nav{
+    margin: 30px 0;
+
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer-nav ul li a{
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+    
+}
+.footer-nav ul li a:hover{
+    opacity : 1;
+}
+.footer-bottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    color: white;
+}
+
+
+
