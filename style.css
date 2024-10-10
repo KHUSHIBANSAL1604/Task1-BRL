@@ -1,3 +1,14 @@
+@media (max-width:786px)
+{
+    .footercontainer{
+flex-direction: column;
+    }
+    
+}
+.footercontainer
+{
+    display: flex;
+}
 *{
     margin: 0;
     padding: 0;
